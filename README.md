@@ -1,5 +1,6 @@
 # jamSholat
-بسم الله الرحمن الرحيم 
+بسم الله الرحمن الرحيم  
+
 Project jam sholat dengan STM32, free to share!
 
 Note: 
