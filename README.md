@@ -30,6 +30,7 @@ Dalam kontroler board utama (file: Digital_Praytime_Display_P4.75_v0.9.brd) terd
 Pada board eksternal (file: External_Battery.brd dan Encoder.brd) terdiri dari:
 * soket baterai 
 * tombol rotary encoder
+
 board eksternal berfungsi sebagai papan expansi untuk jam sholat yang menggunakan frame tertutup, sehingga board ini bisa diakses diluar 
 
 
