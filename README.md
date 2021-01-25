@@ -26,6 +26,7 @@ Dalam kontroler board utama (file: Digital_Praytime_Display_P4.75_v0.9.brd) terd
 
 ![](/PCB/External_Battery.png)
 ![](/PCB/Encoder.png)
+
 Pada board eksternal (file: External_Battery.brd dan Encoder.brd) terdiri dari:
 * soket baterai 
 * tombol rotary encoder
