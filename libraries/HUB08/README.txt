@@ -1,10 +1,10 @@
 HUB08 library
 --------------
 
-A library for driving the 512 pixel dot matrix LED display "HUB08", a 32 x 16 layout.
+A library for driving the 512 pixel dot matrix LED display "HUB08", a 64 x 32 layout.
 
 Includes:
-- High speed display connection straight to SPI port and pins.
+- High speed display connection straight to GPIO port and pins.
 - A full 5 x 7 pixel font set and character routines for display.
 - A numerical and symbol 6 x 16 font set with a colon especially for clocks and other fun large displays.
 - Special graphics modes: Normal, Inverse, Toggle, OR and NOR!
