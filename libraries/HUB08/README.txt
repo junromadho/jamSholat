@@ -1,7 +1,7 @@
 HUB08 library
 --------------
 
-A library for driving the Freetronics 512 pixel dot matrix LED display "HUB08", a 32 x 16 layout.
+A library for driving the 512 pixel dot matrix LED display "HUB08", a 32 x 16 layout.
 
 Includes:
 - High speed display connection straight to SPI port and pins.
@@ -27,7 +27,7 @@ USAGE NOTES
   running straight away!
 
 * The HUB08 comes with a pre-made data cable and HUB08CON connector board so you can plug-and-play straight
-  into any regular size Arduino Board (Uno, Freetronics Eleven, EtherTen, USBDroid, etc)
+  into any regular size Arduino Board (Uno, EtherTen, USBDroid, etc)
   
 * Please note that the Mega boards have SPI on different pins, so this library does not currently support
   the HUB08CON connector board for direct connection to Mega's, please jumper the HUB08CON pins to the
