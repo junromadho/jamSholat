@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+  %VERSION%
+  %MASJID%
+  %ALAMAT%
+  %IQOSUB%
+
+  -->
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jadwal sholat</title>
+
+    <meta name="Yun Romadho" content="Konfigurasi Jam Sholat">
+     <link rel="icon" href="data:,">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<h2>Jadwal Sholat %VERSION%</h2>
+<h3>
+  <span>%MASJID%</span>
+  <div> %ALAMAT%</div>
+</h3>
+
+  <form action="/sync_page" method="post">
+  <p >
+    Untuk memprogram waktu jam sholat tekan tombol: 
+
+      <input type="hidden" name="date" id="todayDate"/>
+      <input type="hidden" name="fdate" id="fullDate"/>
+    <input  type="submit" value="Program" class="lead">
+  </p>
+  <p> Terakhir waktu jam sholat diprogram: %LASTTIME%</p>
+   </form> 
+<script type="text/javascript">
+function getDate()
+{
+    var today = new Date();
+    var tt = Math.round(today.getTime()/1000);       
+    today = tt;   
+    document.getElementById("todayDate").value = today;
+
+    var d = new Date();
+    var n = d.toLocaleString();
+    document.getElementById("fullDate").value = n;
+}
+getDate();
+</script>
+
+  
+</form> 
+  </table>
+  <br>
+<br>
+<form action="/bright_page" method = "post">
+  <label for="bright">Setting kecerahan layar:</label>
+  <br>
+  <input type="range" id="bright" name="bright" min="1" max="19" value =%BRIGHTVAL%>
+  <input type="submit">
+</form>
+
+<form action="/text_page" method = "post">
+  <label for="speed">Setting kecepatan geser text:</label>
+  <br>
+  <input type="range" id="speed" name="speed" min="2" max="19" value=%SPEEDVAL%>
+  <input type="submit">
+</form>
+</body>
+</html>
+
+<!--<p class="hidden"><a href="wifi.html">Config Wifi</a></p>-->

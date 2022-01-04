@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jadwal sholat</title>
+
+    <meta name="Yun Romadho" content="Konfigurasi Jam Sholat">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+
+<h2>Jadwal Sholat %VERSION%</h2>
+<h3>
+  <span>%MASJID%</span>
+  <div> %ALAMAT%</div>
+</h3>
+
+  <table align="center">
+  <form action="/mosque_conf" method = "post">  
+
+  <tr>
+    <td colspan='3'><strong>Konfigurasi Identitas Masjid</strong> </td>      
+  </tr>
+
+  <tr>
+    <td class="conf_label">Nama Masjid</td>
+    <td>:</td>
+    <td> <textarea name="masjid" rows="2" cols="24">%MASJID%</textarea></td>
+  </tr>
+
+  <tr>
+    <td class="conf_label">Alamat</td>
+    <td>:</td>
+    <td> <textarea name="alamat" rows="4" cols="24">%ALAMAT%</textarea></td>
+  </tr>
+
+    <tr>
+      <td colspan='3'><input type="submit" value="Set Masjid"></td>
+      
+    </tr>    
+  
+</form> 
+  </table>
+
+  <table align="center">
+  <form action="/coordinate_conf" method = "post">  
+
+  <tr>
+    <td colspan='3'><strong>Konfigurasi Koordinat Masjid</strong> </td>    
+  </tr>
+  <tr>
+    <td colspan='3'>(Jangan Dirubah!)</td>   
+  </tr>
+
+  <tr>
+    <td class="conf_label">Latitude</td>
+    <td>:</td>
+    <td> <input type="text" id="lat" name="lat" value=%LATITUDE%></td>
+  </tr>
+
+  <tr>
+    <td class="conf_label">Longitude</td>
+    <td>:</td>
+    <td> <input type="text" id="long" name="long" value=%LONGITUDE%></td>
+  </tr>
+
+    <tr>
+      <td colspan='3'><input type="submit" value="Set Coordinate"></td>
+      
+    </tr>    
+  
+</form> 
+  </table>
+
+<form action="/gps_page" method="post">
+  <p >
+    Aktivasi GPS:
+
+    <input  type="submit" value="gps" >
+  </p>
+   </form> 
+
+   <form action="/reboot" method="get">
+  <p >
+    Reboot:
+
+    <input  type="submit" value="reboot" >
+  </p>
+   </form> 
+
+<p><a href="/">Kembali</a></p>
+</body>
+</html>
