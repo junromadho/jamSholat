@@ -4,7 +4,6 @@
 
 // peer waktu sholat jumat
 
-//#include <DMDv1_3.h>
 #include <HUB08.h>
 #include "RTClock.h"
 #include <fonts/font5x7.h>
